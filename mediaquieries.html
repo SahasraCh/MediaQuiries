@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing:border-box;
+            border:none;
+        }
+        body {
+            background: #50a1b2;
+            background: -webkit-linear-gradient(to right, #151537, #20495e, #0f0c29);
+            background: linear-gradient(to right, #0a2338, #244b66, #5397a3);
+        }
+        .container{
+            width:100vw;
+            height:100vh;
+            padding:10px;
+            display:flex;
+            justify-content: space-evenly;
+            align-items: center;
+            overflow:scroll;
+        }
+        .box1{
+            width:400px;
+            height:400px;
+            background-color: black;
+            margin:10px;
+            background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpmhDjtUf_NsvoBbIv2rYVzpZMK_dXpIF-Iw&s);
+            background-size: cover;
+            padding:10px;
+            border-radius: 25px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.666);
+            cursor: pointer;
+        }
+        .heading1{
+            font-size:45px;
+            color:rgba(255, 255, 255, 0.564);
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.564);
+        }
+        .sub1{
+            font-size:40px;
+            color:rgba(255, 255, 255, 0.564);
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.563);
+        }
+        .box2{
+            width:400px;
+            height:400px;
+            background-color: black;
+            margin:10px;
+            background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsuteunyyUhnGQt0GoqXmuv6sYcRgzzcv4_Q&s);
+            background-size: cover;
+            padding:10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.666);
+            border-radius:25px;
+            cursor: pointer;
+        }
+        .heading2{
+            font-size:45px;
+            color:rgba(206, 136, 23, 0.753);
+            text-shadow: 0 0 5px rgba(206,136,23,0.753);
+        }
+        .sub2{
+            font-size:40px;
+            color:rgba(206, 136, 23, 0.753);
+            text-shadow:0 0 5px rgba(206,136,23,0.753);
+        }
+        .box3{
+            width:400px;
+            height:400px;
+            background-color: black;
+            margin:10px;
+            background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNPa3NSSoxZ_nB_ccu173LoaigJsjJfB84hQ&s);
+            background-size: cover;
+            padding:10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.666);
+            border-radius:25px;
+            cursor: pointer;
+        }
+        .heading3{
+            font-size:45px;
+            color:rgba(5, 5, 5, 0.442);
+            text-shadow: 0 0 10px rgba(5, 5, 5, 0.442);
+        }
+        .sub3{
+            font-size:40px;
+            color:rgba(5, 5, 5, 0.442);
+            text-shadow: 0 0 10px rgba(5, 5, 5, 0.442)
+        }
+        @media(max-width:1200px){
+            .container{
+                flex-direction:column;
+                align-items: center;
+            }
+        }
+        @media(max-width:500px){
+            .container{
+                flex-direction: row;
+            }
+            .box1{
+                width:200px;
+                height:200px;
+            }
+            .box2{
+                width:200px;
+                height:200px;
+            }
+            .box3{
+                width:200px;
+                height:200px;
+            }
+            .heading1{
+              font-size:20px;
+            }
+            .heading2{
+                font-size:20px;
+            }
+            .heading3{
+                font-size:20px;
+            }
+            .sub1{
+                font-size:20px;
+            }
+            .sub2{
+                font-size:20px;
+            }
+            .sub3{
+                font-size:20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+   
+        <div class="box1">
+            <h1 class="heading1">Exploring</h1>
+            <h2 class="sub1">The Sea</h2>
+        </div>
+        <div class="box2">
+            <h1 class="heading2">Exploring</h1>
+            <h2 class="sub2">The Forest</h2>
+        </div>
+        <div class="box3">
+            <h1 class="heading3">Exploring</h1>
+            <h2 class="sub3">The Mountains</h2>
+        </div>
+    </div>
+</body>
+</html>
